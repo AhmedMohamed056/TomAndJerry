@@ -1,6 +1,7 @@
 package com.thechance.tomandjerry.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -44,13 +45,12 @@ fun TomKitchen(innerPadding: PaddingValues) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-        //.padding(innerPadding)
+        .padding(innerPadding)
         ,
         contentAlignment = Alignment.TopStart
     ) {
         Icon(
-            modifier = Modifier
-                .offset(y = (-51).dp),
+            modifier = Modifier,
             painter = painterResource(R.drawable.ellipse2),
             contentDescription = "ellipse2",
             tint = Color.Unspecified
@@ -59,43 +59,12 @@ fun TomKitchen(innerPadding: PaddingValues) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            //.padding(innerPadding)
+            .padding(innerPadding)
             .background(color = TomKitchenHeaderColor)
             .padding(top = 162.dp)
 
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(
-                    color = TomKitchenCardColor,
-                    shape = RoundedCornerShape(topEnd = 16.dp, topStart = 16.dp)
-                )
-                .padding(vertical = 16.dp, horizontal = 16.dp)
-        ) {
-            ProductNameContainer()
-            SpacerVertical16()
-            TomKitchenProductDescription()
-            SpacerVertical24()
-            TomKitchenDetailsColumn()
-            SpacerVertical24()
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = 72.dp)
-            ) {
-                Text(
-                    text = "Preparation method",
-                    fontFamily = IbmPlexSansArabic,
-                    fontWeight = FontWeight.Medium,
-                    fontSize = 18.sp,
-                    letterSpacing = 0.5.sp,
-                    color = PrimaryColor
-                )
-                Spacer(modifier = Modifier.height(8.dp))
                 TomKitchenLazyColumn(PreparationMethodStepCardDummyItems)
-            }
-        }
     }
     Box(
         modifier = Modifier.fillMaxSize(),
@@ -104,8 +73,13 @@ fun TomKitchen(innerPadding: PaddingValues) {
         Column (
             modifier = Modifier
                 .fillMaxWidth()
+                .padding(innerPadding)
                 .background(
                     color = Color.White
+                )
+                .border(
+                    width = 1.dp,
+                    color = PrimaryColor.copy(alpha = .12f)
                 )
                 .padding(horizontal = 16.dp, vertical = 15.dp),
         ) {

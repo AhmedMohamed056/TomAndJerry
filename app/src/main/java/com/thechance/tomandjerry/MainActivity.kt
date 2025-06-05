@@ -20,10 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             TomAndJerryTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    //JerryStore(innerPadding)
+                    JerryStore(innerPadding)
                     //SecretEpisodes(innerPadding)
                     //TomAccount(innerPadding)
-                    TomKitchen(innerPadding)
+                    //TomKitchen(innerPadding)
                 }
             }
         }

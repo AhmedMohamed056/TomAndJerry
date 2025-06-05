@@ -58,7 +58,7 @@ fun TomAccountCard(
             ) {
                 Text(
                     text = title,
-                    fontWeight = FontWeight.W600,
+                    fontWeight = FontWeight.SemiBold,
                     fontFamily = IbmPlexSansArabic,
                     fontSize = 16.sp,
                     color = TomKitchenTextColor,
@@ -72,7 +72,7 @@ fun TomAccountCard(
                 )
                 Text(
                     text = subTitle,
-                    fontWeight = FontWeight.W500,
+                    fontWeight = FontWeight.Medium,
                     fontFamily = IbmPlexSansArabic,
                     fontSize = 12.sp,
                     color = TomKitchenDetailsSubTextColor,

@@ -16,7 +16,6 @@ import com.thechance.tomandjerry.entity.Message.ITEM_THREE
 import com.thechance.tomandjerry.entity.Message.ITEM_TOW
 import com.thechance.tomandjerry.entity.TomAccountData
 import com.thechance.tomandjerry.ui.theme.IbmPlexSansArabic
-import com.thechance.tomandjerry.ui.theme.PrimaryColor
 
 @Composable
 fun TomAccountContainer(
@@ -31,7 +30,7 @@ fun TomAccountContainer(
             text = title,
             fontFamily = IbmPlexSansArabic,
             fontSize = 20.sp,
-            fontWeight = FontWeight.W700,
+            fontWeight = FontWeight.Bold,
             color = Color(0xDE1F1F1E)
         )
         SpacerVertical8()

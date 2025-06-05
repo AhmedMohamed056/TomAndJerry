@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.sp
 import com.thechance.tomandjerry.R
 import com.thechance.tomandjerry.ui.theme.DarkBlue
 import com.thechance.tomandjerry.ui.theme.IbmPlexSansArabic
+import com.thechance.tomandjerry.ui.theme.PrimaryColor
 import com.thechance.tomandjerry.ui.theme.SecondaryColor
 
 @Composable
@@ -64,7 +65,7 @@ fun NotificationIconWithBadge(){
             modifier = Modifier
                 .border(
                     width = 1.dp,
-                    color = SecondaryColor,
+                    color = PrimaryColor.copy(alpha = 0.15f),
                     shape = RoundedCornerShape(12.dp),
                 )
                 .padding(8.dp),

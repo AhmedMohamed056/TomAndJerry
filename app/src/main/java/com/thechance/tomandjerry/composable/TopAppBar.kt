@@ -40,7 +40,7 @@ fun TopAppBar(){
             Text(
                 text = "Hi, Jerry \uD83D\uDC4B\uD83C\uDFFB",
                 fontSize = 14.sp,
-                fontWeight = FontWeight.Medium,
+                fontWeight = FontWeight.W500,
                 fontFamily = IbmPlexSansArabic,
                 color = PrimaryColor
             )

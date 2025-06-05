@@ -93,7 +93,7 @@ fun CheapTomCard(
             ) {
                 Text(
                     text = title,
-                    fontWeight = FontWeight.Medium,
+                    fontWeight = FontWeight.SemiBold,
                     fontSize = 18.sp,
                     fontFamily = IbmPlexSansArabic,
                     color = PrimaryColor,

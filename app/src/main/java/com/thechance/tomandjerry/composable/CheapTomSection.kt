@@ -32,7 +32,7 @@ fun CheapTomSection(){
         Text(
             text = "Cheap tom section",
             fontFamily = IbmPlexSansArabic,
-            fontWeight = FontWeight.Medium,
+            fontWeight = FontWeight.SemiBold,
             fontSize = 20.sp,
             color = PrimaryColor
         )

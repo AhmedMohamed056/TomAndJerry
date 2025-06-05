@@ -124,7 +124,7 @@ fun TomAccount(innerPadding: PaddingValues) {
                         Text(
                             text = "Edit foolishness",
                             color = Color.White,
-                            fontWeight = FontWeight.W500,
+                            fontWeight = FontWeight.Medium,
                             fontFamily = IbmPlexSansArabic,
                             fontSize = 10.sp,
                             letterSpacing = 0.sp
@@ -241,7 +241,7 @@ fun TomAccount(innerPadding: PaddingValues) {
                             text = "v.TomBeta",
                             fontFamily = IbmPlexSansArabic,
                             fontSize = 12.sp,
-                            fontWeight = FontWeight.W400,
+                            fontWeight = FontWeight.Normal,
                             color = TomKitchenDetailsSubTextColor
                         )
                     }
